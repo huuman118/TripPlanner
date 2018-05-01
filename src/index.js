@@ -1,6 +1,7 @@
-const mapboxgl = require('mapbox-gl');
-const buildMaker = require('./marker');
-mapboxgl.accessToken = "pk.eyJ1Ijoieml5byIsImEiOiJjamdvNGVmaDUwaHVmMnFueW16eGk4eHl3In0.jkQ29FEvOKOqO9I7yKyfHQ";
+const mapboxgl = require("mapbox-gl");
+const buildMaker = require("./marker");
+mapboxgl.accessToken =
+  "pk.eyJ1Ijoieml5byIsImEiOiJjamdvNGVmaDUwaHVmMnFueW16eGk4eHl3In0.jkQ29FEvOKOqO9I7yKyfHQ";
 
 const map = new mapboxgl.Map({
   container: "map",
@@ -11,5 +12,3 @@ const map = new mapboxgl.Map({
 
 const marker = buildMaker("restaurants", [-74.009151, 40.705086]);
 marker.addTo(map);
-
-
